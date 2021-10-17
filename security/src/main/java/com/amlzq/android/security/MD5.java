@@ -33,6 +33,7 @@ public class MD5 {
             MD = MessageDigest.getInstance(ALGORITHM);
         } catch (NoSuchAlgorithmException e) {
             Logger.e("Get MessageDigest instance failed.", e);
+            e.printStackTrace();
         }
     }
 

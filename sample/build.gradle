@@ -40,4 +40,10 @@ dependencies {
     implementation "com.amlzq.android:log:${rootProject.ext.logVersion}"
     implementation "com.amlzq.android:annotations:${rootProject.ext.annotationsVersion}"
 //    implementation 'com.amlzq.android:utils:1.0.4'
+
+    // amlzq library
+    implementation project(':security')
+    implementation "com.amlzq.android:log:${rootProject.ext.logVersion}"
+    implementation "com.amlzq.android:annotations:${rootProject.ext.annotationsVersion}"
+    implementation 'com.amlzq.android:utils:1.0.5'
 }

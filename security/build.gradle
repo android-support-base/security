@@ -6,8 +6,8 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "1.0.5"
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -17,6 +17,7 @@ android {
 //            android.libraryVariants.all { variant ->
 //                variant.outputs.all {
 //                    outputFileName = "android-support-utils-${defaultConfig.versionName}.aar"
+//                    outputFileName = "android-support-security-${defaultConfig.versionName}.aar"
 //                }
 //            }
         }
@@ -73,11 +74,11 @@ publish {
     userOrg = 'amlzq' // 组织用户名
     repoName = 'android-support-base' // maven类型仓库名称
     groupId = 'com.amlzq.android' //
-    artifactId = 'utils'
+    artifactId = 'security'
     publishVersion = android.defaultConfig.versionName
-    desc = 'utils api'
-    website = 'https://github.com/android-support-base/utils'
-    repository = 'https://github.com/android-support-base/utils.git'
+    desc = 'security api'
+    website = 'https://github.com/android-support-base/security'
+    repository = 'https://github.com/android-support-base/security.git'
 }
 
 ////以下是发布到本地 maven 仓库配置
@@ -92,7 +93,7 @@ publish {
 //    repositories.mavenDeployer {
 //        repository(url: properties.getProperty("mavenLocal"))
 //        pom.groupId = "com.amlzq.android"
-//        pom.artifactId = "utils"
+//        pom.artifactId = "security"
 //        pom.version = android.defaultConfig.versionName
 //    }
 //}
